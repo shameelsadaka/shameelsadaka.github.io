@@ -83,16 +83,19 @@ h1,h2,h3,h4,h5{
 	    padding: 10px 0;
 	    max-width: 20%;
 	}
-
-		.skills-section{
-			width: 94%;
-		}
+	@media (max-width: 1170px) {
+	    .skill-item {
+	        flex: 25%;
+	        max-width: 25%;
+	    }
+	}
+	@media (max-width: 900px) {
 	    .skill-item {
 	        flex: 33.33%;
 	        max-width: 33.33%;
 	    }
 	}
-	@media (max-width: 780px) {
+	@media (max-width: 764px) {
 	    .skill-item {
 	        flex: 50%;
 	        max-width: 50%;
@@ -149,13 +152,13 @@ h1,h2,h3,h4,h5{
 	text-align: left;
 	list-style: none;
 }
-	.projects-section ul.projects > li:before,.awards-section ul.awards > li:before{
+	.projects-section ul.projects h3:before,.awards-section ul.awards h3:before{
 		content: "\f1b2";
 		font-family: 'FontAwesome';
 		margin-right: 4px;	
 		color: #1973b2;
 	}
-		.awards-section ul.awards > li:before{		
+		.awards-section ul.awards h3:before{		
 			color: #259bb6;
 			content: "\f024";
 		}
@@ -195,7 +198,7 @@ h1,h2,h3,h4,h5{
 			float: left;
 			font-size: 12px;
 			padding: 3px 10px;
-			margin-right: 10px;
+			margin:0 10px 8px 0;
 			background: #EEEEEE;
 			color: #777777;
 			border-radius: 10px;
