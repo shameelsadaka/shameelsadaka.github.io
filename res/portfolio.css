@@ -84,7 +84,9 @@ h1,h2,h3,h4,h5{
 	    max-width: 20%;
 	}
 
-	@media (max-width: 1000px) {
+		.skills-section{
+			width: 94%;
+		}
 	    .skill-item {
 	        flex: 33.33%;
 	        max-width: 33.33%;
@@ -112,11 +114,23 @@ h1,h2,h3,h4,h5{
 				text-align: left;
 				display: inline-block;
 				font-size: 13px;
-				font-weight: 700;
-				color: #3c375e;
+					font-weight: 700;
+					color: #3c375e;
 				margin: 6px 0 0 10px;
 			}
 
+	@media (max-width: 480px) {
+		.progress-bar{
+			display: block;
+			width: 100%;
+		}
+		.skill-name{
+			text-align: center;
+			width: 100%;
+			display: block;
+			margin-left: 0;
+		}
+	}
 	.skills-section h4{
 		font-weight: 500;
 		text-align: left;
@@ -206,4 +220,10 @@ footer{
 	color: #555555;
 	font-weight: 600;
 	font-size: 13px;
+}
+	
+@media (max-width: 940px) {
+	.projects-section ul.projects,.awards-section ul.awards{
+		width: 96%;
+	}
 }
