@@ -89,13 +89,13 @@ h1,h2,h3,h4,h5{
 	        max-width: 25%;
 	    }
 	}
-	@media (max-width: 900px) {
+	@media (max-width: 890px) {
 	    .skill-item {
 	        flex: 33.33%;
 	        max-width: 33.33%;
 	    }
 	}
-	@media (max-width: 764px) {
+	@media (max-width: 70 0px) {
 	    .skill-item {
 	        flex: 50%;
 	        max-width: 50%;
