@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5{margin: 0; padding: 0; }
 .skills-section{margin: 20px auto; width:1000px; max-width: 90%; }
 	.skills-container{display: flex; flex-wrap: wrap; margin: 10px 0 20px; }
 	.skill-item{flex: 20%; padding: 10px 0; max-width: 20%; }
-	@media (max-width: 1170px) {.skill-item {flex: 25%; max-width: 25%; } }
+	.skill-name{-webkit-transition:all 150ms ease; -moz-transition:all 150ms ease; -ms-transition:all 150ms ease; -transition:all 150ms ease; } @media (max-width: 1170px) {.skill-item {flex: 25%; max-width: 25%; } }
 	@media (max-width: 890px) {.skill-item {flex: 33.33%; max-width: 33.33%; } }
 	@media (max-width: 70 0px) {.skill-item {flex: 50%; max-width: 50%; } }
 			.progress-bar{display: inline-block; width:55px; height: 55px; float: left; }
@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5{margin: 0; padding: 0; }
 		.skill-name{text-align: center; width: 100%; display: block; margin-left: 0; }
 	}
 	.skills-section h4{font-weight: 500; text-align: left; font-size: 12px; margin-bottom: 5px; color: #BBBBBB; letter-spacing: 2px; }
+	.skill-item:hover .skill-name{ color: #1169ae;}
 
 .projects-section ul.projects,.awards-section ul.awards{width: 940px; max-width: 95%; padding: 0 15px; margin: 0 auto 30px; display: table; text-align: left; list-style: none; }
 	.projects-section ul.projects h3:before,.awards-section ul.awards h3:before{content: "\f1b2"; font-family: 'FontAwesome'; margin-right: 4px; color: #1973b2; }
@@ -46,3 +47,9 @@ h1,h2,h3,h4,h5{margin: 0; padding: 0; }
 footer{text-align: center; padding: 20px; color: #555555; font-weight: 600; font-size: 13px; }
 	
 @media (max-width: 940px) {.projects-section ul.projects,.awards-section ul.awards{width: 96%; } }
+
+/* Tooltip */
+.tooltip {position: relative; display: inline-block; }
+.tooltip .tooltiptext {visibility: hidden; opacity: 0; width: 100px; background-color: black; color: #fff; font-size: 11px; text-align: center; margin-top: 8px; padding: 0; border-radius: 6px; /* Position the tooltip text - see examples below! */ position: absolute; z-index: 1; -webkit-transition:all 0.2s ease; -moz-transition:all 0.2s ease; -ms-transition:all 0.2s ease; -transition:all 0.2s ease; }
+.tooltip .tooltiptext {width: 120px; top: 100%; left: 50%;  transform: translateX(-50%); } /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {visibility: visible; opacity: 0.6; } .tooltip .tooltiptext::after {content: " "; position: absolute; bottom: 100%;  /* At the top of the tooltip */ left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent black transparent; }
